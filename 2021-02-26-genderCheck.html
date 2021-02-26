@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>JS 이벤트</title>
+        <style>
+            #afterBox{ width: 15px; }
+        </style>
+    </head>
+    <body>
+        <input type="text" id="beforeBox" placeholder="생년월일입력" maxlength="6">
+        -
+        <input type="text" id="afterBox" maxlength="1">XXXXXX
+        <span id="text"></span>
+        <hr>
+        <input type="radio" name="gender" id="male">
+        <label for="male">남자</label>
+        &nbsp;&nbsp;&nbsp;
+        <input type="radio" name="gender" id="female">
+        <label for="female">여자</label>
+
+        <script>
+            //value : 입력양식의 입력값을 받아오는 속성
+            //checked : 체크박스나 라디오값의 체크관련 속성
+            //값을 얻어올때 : 체크가 되어 있다면 true, 미체크시 false
+            //값을 변경할때 : 객체선택.checked = true; //체크처리
+
+            //문제
+            //주민번호 뒷자리의 첫글자가 1혹은 3이면 남자에 체크, 2혹은 4이면 여자에 체크하여라
+            //나머지 숫자인 경우는 #text에 [주민번호 뒷자리를 잘못입력하셨습니다.]라는 문구가 뜨게 처리
+
+            //내 답
+            var num = document.getElementById('afterBox');
+            var text = document.getElementById('text');
+            var male = document.getElementById('male');
+            var female = document.getElementById('female');
+            
+            if(num == 1 || num == 3){
+                male.checked = true;
+            }else if(num == 2 || num == 4){
+                female.checked = true;
+            }else{
+                text.textContent('주민번호 뒷자리를 잘못입력하셨습니다.');
+            }
+
+
+        </script>
+    </body>
+</html>
