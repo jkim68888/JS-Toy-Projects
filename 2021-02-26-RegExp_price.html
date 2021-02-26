@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>정규표현식</title>
+    </head>
+    <body>
+        <h1 id="test">30000</h1>
+        <script>
+            var test = document.getElementById('test');
+            var price = test.innerHTML;
+            //innerHtml : 문서객체의 텍스트를 가져옴 (태그인식)
+            //innerText : 문서객체의 텍스트를 가져옴 (태그미인식)
+
+            //글꼴에 따라 원화기호가 표시가 안될 수 있어서 특수문자 사용
+            //&#8361;
+
+            test.innerHTML = '&#8361;' + price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        </script>
+    </body>
+</html>
+
+
+
+
+
+
