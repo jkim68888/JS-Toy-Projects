@@ -47,10 +47,12 @@ function addTodo(event){
 }
 
 function deleteCheck(e){
-    const item = e.target; //질문
+    const item = e.target; //이벤트가 발생된 요소를 가져옴
+
+    console.log(item);
 
     //delete TODO
-    if(item.classList[0] === 'trash-btn'){ //질문
+    if(item.classList[0] === 'trash-btn'){ //(classList는 배열로 갖고온다.) 요소의 첫번째 클래스가 trash-btn일때
         const todo = item.parentElement;
         //animation
         todo.classList.add("fall");
@@ -68,7 +70,7 @@ function deleteCheck(e){
 }
 
 function filterTodo(e){
-    const todos = todoList.childNodes; //질문
+    const todos = todoList.childNodes; 
     todos.forEach(function(todo){
         switch(e.target.value){
             case "all":
