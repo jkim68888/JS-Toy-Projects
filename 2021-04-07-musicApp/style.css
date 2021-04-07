@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: #fff;
 }
 body{
     font-family: 'Roboto', sans-serif;
@@ -12,6 +13,7 @@ body{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    background-color: #000;
 }
 
 header h1{
@@ -24,9 +26,9 @@ header p{
 }
 
 .pads{
-    background: lightblue;
     width: 100%;
     display: flex;
+    z-index: 1;
 }
 
 .pads > div{
@@ -36,22 +38,22 @@ header p{
 }
 
 .pad1{
-    background: #60d394;
+    background: #ff0000;
 }
 .pad2{
-    background: #d36060;
+    background: #ffd900;
 }
 .pad3{
-    background: #c060d3;
+    background: #026807;
 }
 .pad4{
-    background: #d3d160;
+    background: #0004ff;
 }
 .pad5{
-    background: #6860d3;
+    background: #9c0e85;
 }
 .pad6{
-    background: #60b2d3;
+    background: #7007a0;
 }
 
 @keyframes jump{
@@ -76,5 +78,4 @@ header p{
     border-radius: 50%;
     bottom: 0%;
     left: 20%;
-    z-index: -1;
 }
