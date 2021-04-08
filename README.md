@@ -55,3 +55,8 @@
 - 각각의 컬러를 클릭하였을때 서로 다른 소리가 나고 소리가 날때마다 애니메이션이 구현되도록 하였습니다.
 
 ![musicApp_recording](https://user-images.githubusercontent.com/75922558/113879790-da4a0d80-97f5-11eb-81cb-b5284f45d754.gif)
+
+### 8. Weather App 구현
+- 날씨 오픈소스 API를 사용하여 검색한 도시의 현재 날씨를 보여주는 앱을 구현하였습니다.
+
+![weatherApp_recording](https://user-images.githubusercontent.com/75922558/113976804-8c2c1d00-987c-11eb-9c7f-e28c4d1d9de2.gif)
