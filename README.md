@@ -1,9 +1,7 @@
-# Javascript Study
+# 바닐라 자바스크립트 Toy Projects
 
 
 ![js_ico](https://user-images.githubusercontent.com/75922558/112740394-936b4500-8fb7-11eb-82ca-20e66a53ad10.png)
-
-### 바닐라 자바스크립트로 구현한 토이 프로젝트들입니다.
 
 <br>
 
